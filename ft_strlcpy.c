@@ -6,7 +6,7 @@
 /*   By: rsangjan <rsangjan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/26 22:28:27 by rsangjan          #+#    #+#             */
-/*   Updated: 2026/08/27 22:15:29 by rsangjan         ###   ########.fr       */
+/*   Updated: 2026/08/28 21:10:25 by rsangjan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t destsize)
 	if (destsize == 0)
 		return (src_len);
 	i = 0;
-	while (src[i] != '\0' && i < destsize - 1)
+	while (src[i] && i < destsize - 1)
 	{
 		dest[i] = src[i];
 		i++;
