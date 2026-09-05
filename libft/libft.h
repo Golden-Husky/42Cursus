@@ -6,7 +6,7 @@
 /*   By: rsangjan <rsangjan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/27 22:06:30 by rsangjan          #+#    #+#             */
-/*   Updated: 2026/09/01 00:04:12 by rsangjan         ###   ########.fr       */
+/*   Updated: 2026/09/04 02:11:59 by rsangjan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,5 +40,15 @@ void	*ft_memmove(void *dest, const void *src, size_t len);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	ft_bzero(void *str, size_t n);
 void	*ft_calloc(size_t count, size_t size);
+char	*ft_substr(const char *str, unsigned int start, size_t len);
+char	*ft_strjoin(const char *s1, const char *s2);
+char	*ft_strtrim(const char *s1, const char *set);
+char	**ft_split(const char *str, char c);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 
-#endif // !LIBFT_H
+#endif 
