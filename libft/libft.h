@@ -6,7 +6,7 @@
 /*   By: rsangjan <rsangjan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/27 22:06:30 by rsangjan          #+#    #+#             */
-/*   Updated: 2026/09/08 23:52:56 by rsangjan         ###   ########.fr       */
+/*   Updated: 2026/09/09 00:03:58 by rsangjan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ int		ft_toupper(int c);
 int		ft_tolower(int c);
 int		ft_atoi(const char *str);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
+char	*ft_itoa(int n);
 char	*ft_strchr(const char *str, int c);
 char	*ft_strrchr(const char *str, int c);
 char	*ft_strnstr(const char *str, const char *find, size_t len);
@@ -66,4 +67,4 @@ void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
-#endif 
+#endif
