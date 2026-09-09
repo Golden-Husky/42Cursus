@@ -6,13 +6,13 @@
 /*   By: rsangjan <rsangjan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/05 15:20:28 by rsangjan          #+#    #+#             */
-/*   Updated: 2026/09/08 23:53:10 by rsangjan         ###   ########.fr       */
+/*   Updated: 2026/09/10 01:26:34 by rsangjan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_lstsize(t_list *lst)
+unsigned int	ft_lstsize(t_list *lst)
 {
 	unsigned int	i;
 
