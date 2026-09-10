@@ -99,8 +99,14 @@ Include the header file in your C source files:
 * [Understanding memmove & Memory Overlap](https://www.youtube.com/watch?v=1eb0d9yCm2M) - Visual explanation of memory overlapping and how `memmove` differs from `memcpy`.
 * [42 Cursus Guide - ft_split](https://42-cursus.gitbook.io/guide/0-rank-00/libft/additional-functions/ft_split#commented-solution) - Guide for `ft_split` logic and memory allocation.
 * [libftTester](https://github.com/Tripouille/libftTester) - Automated test for Libft.
+* Linux Programmer's Manual (man pages for standard libc functions).
 
-### AI Usage
-
-* **Conceptual Learning & Logic Breakdown:** AI was used as an educational assistant to explain the core logic, expected input/output parameters, return values, and potential edge cases (e.g., NULL pointers, buffer overflows, and memory overlaps) for various standard C functions.
-* **Documentation:** AI helped in structuring and polishing the formatting of this `README.md`.
+### AI usage
+Subject V AI disclosure:
+AI (Large Language Models) was used during this project as an educational assistant and documentation tool. Specifically:
+- **How AI was used:** AI was used for prompt-based code review, conceptual explanations, edge-case analysis, and README structure formatting.
+- **For which tasks:** AI helped analyze potential edge cases (such as NULL pointers, memory overlapping in memory functions, and delimiter handling in string manipulation) and provided explanations for standard library specifications.
+- **Which parts:** 
+  - *Makefile:* Reviewed rules and pattern substitutions (`$(SRCS:.c=.o)`) to ensure clean compilation without relinking.
+  - *Logic analysis:* Evaluated boundary cases in `ft_split` (allocation failure cleanup) and `ft_strtrim` (edge delimiter handling).
+  - *Documentation:* Assisted in structuring and verifying compliance of this `README.md` with Chapter V guidelines.
