@@ -72,8 +72,35 @@ The library contains 43 functions organized into three functional categories:
 
 ## Instructions
 
+
 ### Compilation
-The library is compiled into `libft.a` using GNU Make with the flags `-Wall -Wextra -Werror`:
+
+All files are compiled using `cc` with the flags `-Wall -Wextra -Werror`.
 
 ```bash
-make
+make        # Compiles mandatory functions into libft.a
+make clean  # Removes object files (.o)
+make fclean # Removes object files and libft.a
+make re     # Recompiles everything from scratch
+```
+
+### Usage
+
+#### Include the Header
+Include the header file in your C source files:
+
+```c
+#include "libft.h"
+```
+
+## Resources
+
+### References & Guides
+* [Understanding memmove & Memory Overlap](https://www.youtube.com/watch?v=1eb0d9yCm2M) - Visual explanation of memory overlapping and how `memmove` differs from `memcpy`.
+* [42 Cursus Guide - ft_split](https://42-cursus.gitbook.io/guide/0-rank-00/libft/additional-functions/ft_split#commented-solution) - Guide for `ft_split` logic and memory allocation.
+* [libftTester](https://github.com/Tripouille/libftTester) - Automated test for Libft.
+
+### AI Usage
+
+* **Conceptual Learning & Logic Breakdown:** AI was used as an educational assistant to explain the core logic, expected input/output parameters, return values, and potential edge cases (e.g., NULL pointers, buffer overflows, and memory overlaps) for various standard C functions.
+* **Documentation:** AI helped in structuring and polishing the formatting of this `README.md`.
