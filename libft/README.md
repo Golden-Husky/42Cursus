@@ -102,8 +102,6 @@ Include the header file in your C source files:
 * Linux Programmer's Manual (man pages for standard libc functions).
 
 ### AI usage
-Subject V AI disclosure:
-AI (Large Language Models) was used during this project as an educational assistant and documentation tool. Specifically:
 - **How AI was used:** AI was used for prompt-based code review, conceptual explanations, edge-case analysis, and README structure formatting.
 - **For which tasks:** AI helped analyze potential edge cases (such as NULL pointers, memory overlapping in memory functions, and delimiter handling in string manipulation) and provided explanations for standard library specifications.
 - **Which parts:** 
