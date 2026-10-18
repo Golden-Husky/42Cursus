@@ -1,0 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rsangjan <rsangjan@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/18 13:20:24 by rsangjan          #+#    #+#             */
+/*   Updated: 2026/10/18 13:28:21 by rsangjan         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
+
+# include <stddef.h>
+# include <stdlib.h>
+# include <unistd.h>
+
+size_t	ft_strlen(const char *str);
+
+#endif
