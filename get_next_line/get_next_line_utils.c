@@ -6,7 +6,7 @@
 /*   By: rsangjan <rsangjan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 22:34:50 by rsangjan          #+#    #+#             */
-/*   Updated: 2026/10/23 22:39:33 by rsangjan         ###   ########.fr       */
+/*   Updated: 2026/10/24 00:08:47 by rsangjan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,4 +56,29 @@ char	*ft_strchr(const char *str, int c)
 	if ((char)c == '\0')
 		return ((char *)(str + i));
 	return (NULL);
+}
+
+char	*ft_strjoin(const char *s1, const char *s2)
+{
+	size_t	len1;
+	size_t	len2;
+	size_t	i;
+	char	*join;
+
+	if (s1 == NULL || s2 == NULL)
+		return (NULL);
+	len1 = ft_strlen(s1);
+	len2 = ft_strlen(s2);
+	if (len2 > SIZE_MAX - len1 - 1)
+		return (NULL);
+	join = malloc(len1 + len2 + 1);
+	if (join == NULL)
+		return (NULL);
+	i = 0;
+	while (*s1)
+		join[i++] = *s1++;
+	while (*s2)
+		join[i++] = *s2++;
+	join[i] = '\0';
+	return (join);
 }
